@@ -33,11 +33,25 @@ btn.addEventListener("click", toggleMenu);
 
 function prevSlide() {
     const slides = document.querySelector('.slides');
-    slides.scrollBy(-slides.offsetWidth, 0);
+    const slideWidth = slides.offsetWidth;
+    const maxScroll = slideWidth * (slides.childElementCount - 1);
+    
+    if (slides.scrollLeft === 0) {
+      slides.scrollLeft = maxScroll;
+    } else {
+      slides.scrollLeft -= slideWidth;
+    }
   }
   
   function nextSlide() {
     const slides = document.querySelector('.slides');
-    slides.scrollBy(slides.offsetWidth, 0);
+    const slideWidth = slides.offsetWidth;
+    const maxScroll = slideWidth * (slides.childElementCount - 1);
+    
+    if (slides.scrollLeft === maxScroll) {
+      slides.scrollLeft = 0;
+    } else {
+      slides.scrollLeft += slideWidth;
+    }
   }
   

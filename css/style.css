@@ -1,9 +1,16 @@
 body {
-    background-color: #fbf8be;
+    /*background-color: #fbf8be;*/
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+
 }
 
-p {
+p,
+h2,
+h1 {
     color: #234E70;
+    margin: 40px;
 
 }
 
@@ -58,14 +65,14 @@ footer {
 
 /* Styling af billeder på portfolio siden */
 
-.Galleri{
+.Galleri {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.Galleri img{
+.Galleri img {
     width: 30%;
     height: auto;
     justify-content: center;

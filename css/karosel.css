@@ -10,9 +10,14 @@
   }
   
   .slide {
-    flex: 0 0 100%;
+    flex: 0 0 40%;
     scroll-snap-align: start;
     text-align: center;
+  }
+
+  .slide img {
+    max-width: 100%;
+    height: auto;
   }
   
   .prev,
@@ -38,3 +43,8 @@
     right: 0;
   }
   
+  .slide p {
+    margin-top: 10px; /* Adjust the margin as needed */
+    color: #234E70; /* Specify your desired text color */
+    font-size: 16px; /* Specify your desired font size */
+}
