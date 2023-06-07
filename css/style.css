@@ -72,16 +72,15 @@ footer {
     align-items: center;
 }
 
-/*
-.img{
-    display: block;
-    max-width: 100%;
-    margin: 20px;
+.grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1/2;
+    justify-items: center;
+    gap: 20px;
 }
 
-.Galleri{
-    justify-content: center;
-    padding: 70px;
-    margin: 20px;
+.Galleri .grid-item img {
+    width: 100%;
+    height: auto;
 }
-*/
