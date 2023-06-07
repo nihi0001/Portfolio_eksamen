@@ -13,6 +13,7 @@
     flex: 0 0 40%;
     scroll-snap-align: start;
     text-align: center;
+    margin-right: 20px;
   }
 
   .slide img {

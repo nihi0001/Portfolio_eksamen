@@ -70,14 +70,16 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0 10%;
 }
 
+/*
 .Galleri img {
-    width: 30%;
     height: auto;
     justify-content: center;
     align-items: center;
 }
+
 
 .grid_1-1-1 {
     display: grid;
@@ -87,7 +89,24 @@ footer {
     gap: 20px;
 }
 
+*/
+
+.grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+
 .Galleri .grid-item img {
     width: 100%;
     height: auto;
+    
+}
+
+.Galleri .grid-item p {
+    text-align: center;
+    margin-top: 10px;
+
 }
