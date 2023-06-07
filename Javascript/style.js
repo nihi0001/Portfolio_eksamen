@@ -1,22 +1,43 @@
-const burgerMenu = document.querySelector('.burger-menu');
-const navbar = document.querySelector('.navbar');
+//Burger-menu
 
-burgerMenu.addEventListener('click', function() {
-  navbar.classList.toggle('active');
-});
+// Lav variablen "btn", der henviser til ".toggle-btn"
+const btn = document.querySelector(".toggle-btn");
+// Lav variablen "menu", der henviser til ".main-menu"
+const menu = document.querySelector(".main-menu");
 
-document.addEventListener('click', function(event) {
-  if (!navbar.contains(event.target) && !burgerMenu.contains(event.target)) {
-    navbar.classList.remove('active');
+// Lav funktionen "toggleMenu()" med følgende funktionalitet
+function toggleMenu() {
+  // a) toggle klassen "shown" på menu vha. classList.toggle
+  menu.classList.toggle("shown");
+
+  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+  const menuShown = menu.classList.contains("shown");
+
+  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
+  if (menuShown) {
+    console.log(menuShown); // se i konsollen
+    // sæt btn.textContent til "Luk", hvis menuShown er "true"
+    btn.textContent = "Luk";
+  } else {
+    console.log(menuShown); // se i konsollen
+    // sæt btn.textContent til "Menu", hvis menuShown er "false"
+    btn.textContent = "Menu";
   }
-});
+}
+
+// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
+btn.addEventListener("click", toggleMenu);
 
 
+//karosel
 
-
-// const burgerMenu = document.querySelector('.burger-menu');
-//const navbar = document.querySelector('.navbar');
-
-//burgerMenu.addEventListener('click', function() {
-  //navbar.classList.toggle('active');
-//});
+function prevSlide() {
+    const slides = document.querySelector('.slides');
+    slides.scrollBy(-slides.offsetWidth, 0);
+  }
+  
+  function nextSlide() {
+    const slides = document.querySelector('.slides');
+    slides.scrollBy(slides.offsetWidth, 0);
+  }
+  

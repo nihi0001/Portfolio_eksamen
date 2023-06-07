@@ -1,0 +1,40 @@
+.carousel {
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    text-align: center;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
