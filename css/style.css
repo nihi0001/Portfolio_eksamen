@@ -1,7 +1,7 @@
 body {
 
-    background-color:mistyrose;
-/*
+    background-color: mistyrose;
+    /*
     background-color: #fbf8be;
     
     background: rgb(238, 174, 202);
@@ -15,7 +15,7 @@ background: linear-gradient(90deg, rgba(255,211,161,1) 0%, rgba(251,248,176,1) 4
 
 p,
 h2,
-h1, 
+h1,
 h3 {
     color: #ff0000;
     margin: 40px;
@@ -23,10 +23,10 @@ h3 {
 
 }
 
-p a{
+p a {
     color: #ff0000;
-    text-decoration:underline;
-    font-size:medium;
+    text-decoration: underline;
+    font-size: medium;
     font-weight: 500;
 }
 
@@ -113,7 +113,7 @@ footer {
 .Galleri .grid-item img {
     width: 100%;
     height: auto;
-    
+
 }
 
 .Galleri .grid-item p {
@@ -157,18 +157,20 @@ footer {
     text-align: center;
     margin-top: 10px;
 }
+
 /* Styling af teknisk dokumentation */
 .teknik .grid-item img {
     width: 100%;
     height: auto;
-    
+
 }
+
 /* Styling af spil baggrunde */
 
 .spilbaggrund .grid-item img {
     width: 100%;
     height: auto;
-    
+
 }
 
 /* Styling af knapper */
@@ -176,11 +178,11 @@ footer {
 .knapper .grid-item img {
     width: 100%;
     height: auto;
-    
+
 }
 
 
-/* Styling af lille blå site */ 
+/* Styling af lille blå site */
 
 
 /* Styling af wireframe */
@@ -226,6 +228,7 @@ footer {
     width: 100%;
     height: auto;
 }
+
 /* Styling af ekstra materiale */
 
 .ekstramateriale {
@@ -248,7 +251,77 @@ footer {
     height: auto;
 }
 
+/* Styling af links */
 
+/* Hover effekt */
 
+a:link {
+    color: rgb(105, 56, 0);
+}
 
+/* visited link */
+a:visited {
+    color: #ff0000;
+}
 
+/* mouse over link */
+a:hover {
+    color: rgb(105, 56, 0);
+}
+
+/* selected link */
+a:active {
+    color: #ff0000;
+    ;
+}
+
+/* Styling af CV */
+
+.CV img {
+    width: 40%;
+    /* Adjust the desired width as needed */
+    height: auto;
+}
+
+.CV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling af CTA */
+
+.CTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* Adjust the height as needed */
+}
+
+.CTA a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTA img {
+    max-width: 30%;
+    height: auto;
+}
+
+/* Styling af forside teskst */
+
+.forside{
+    text-align: center;
+    margin-top: 2%;
+    font-size: x-large;
+}
+
+.forside p {
+    margin: 20px; /* Adjust the margin as desired */
+    padding: 9px;
+  }
+  
+  
