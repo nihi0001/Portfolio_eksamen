@@ -1,6 +1,6 @@
 body {
 
-    background-color: mistyrose;
+    background-color:mistyrose;
 /*
     background-color: #fbf8be;
     
@@ -15,17 +15,27 @@ background: linear-gradient(90deg, rgba(255,211,161,1) 0%, rgba(251,248,176,1) 4
 
 p,
 h2,
-h1, h3 {
+h1, 
+h3 {
     color: #ff0000;
     margin: 40px;
     font-family: 'Cormorant Garamond', serif;
 
 }
 
+p a{
+    color: #ff0000;
+    text-decoration:underline;
+    font-size:medium;
+    font-weight: 500;
+}
+
 footer {
     text-align: center;
     padding: 5%;
-    color: #234E70;
+    color: #ff0000;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 /* Styling of the navigation bar */
@@ -57,7 +67,7 @@ footer {
     display: block;
     text-decoration: none;
     font-size: 20px;
-    color: #234E70;
+    color: #ff0000;
 }
 
 .logo {
@@ -65,7 +75,7 @@ footer {
 }
 
 .logo img {
-    width: 200px;
+    width: 400px;
     /* Adjust the size as needed */
     height: auto;
     /* Maintain aspect ratio */
