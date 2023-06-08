@@ -123,7 +123,7 @@ footer {
 
 .grid_1-1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     justify-items: center;
 }
@@ -164,6 +164,9 @@ footer {
 
 /* Styling af lille blå site */ 
 
+
+/* Styling af wireframe */
+
 .wireframe {
     display: flex;
     justify-content: center;
@@ -172,8 +175,62 @@ footer {
     padding: 0 10%;
 }
 
+.wireframe .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .wireframe .grid-item img {
     width: 100%;
     height: auto;
-    
 }
+
+/* Styling af layoutdiagram */
+
+.Layoutdiagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.Layoutdiagram .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Layoutdiagram .grid-item img {
+    width: 100%;
+    height: auto;
+}
+/* Styling af ekstra materiale */
+
+.ekstramateriale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.ekstramateriale .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ekstramateriale .grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
