@@ -91,13 +91,6 @@ footer {
 
 */
 
-.grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    justify-items: center;
-}
-
 
 .Galleri .grid-item img {
     width: 100%;
@@ -136,10 +129,15 @@ footer {
 }
 
 /* Styling af skitser */
+
 .skitser .grid-item img {
     width: 100%;
     height: auto;
-    
+}
+
+.skitser .grid-item p {
+    text-align: center;
+    margin-top: 10px;
 }
 /* Styling af teknisk dokumentation */
 .teknik .grid-item img {
