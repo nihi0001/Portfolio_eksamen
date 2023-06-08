@@ -160,3 +160,20 @@ footer {
     height: auto;
     
 }
+
+
+/* Styling af lille blå site */ 
+
+.wireframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.wireframe .grid-item img {
+    width: 100%;
+    height: auto;
+    
+}
