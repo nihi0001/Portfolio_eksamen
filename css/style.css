@@ -110,3 +110,55 @@ footer {
     margin-top: 10px;
 
 }
+
+/* Styling af animationsiden */
+
+/* Grid */
+.grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+.grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Styling af skitser */
+.skitser .grid-item img {
+    width: 100%;
+    height: auto;
+    
+}
+/* Styling af teknisk dokumentation */
+.teknik .grid-item img {
+    width: 100%;
+    height: auto;
+    
+}
+/* Styling af spil baggrunde */
+
+.spilbaggrund .grid-item img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Styling af knapper */
+
+.knapper .grid-item img {
+    width: 100%;
+    height: auto;
+    
+}
