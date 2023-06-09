@@ -122,6 +122,18 @@ footer {
 
 }
 
+.grid-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ctat6 {
+    max-width: 50%; /* Adjust the width as needed */
+    height: auto;
+    padding: 10%;
+}
+
+
 /* Styling af animationsiden */
 
 /* Grid */
