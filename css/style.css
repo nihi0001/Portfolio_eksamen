@@ -26,7 +26,7 @@ h3 {
 p a {
     color: #ff0000;
     text-decoration: underline;
-    font-size: medium;
+    font-size: large;
     font-weight: 500;
 }
 
@@ -146,7 +146,23 @@ footer {
     justify-items: center;
 }
 
+/* Styling af prototypepapir*/
+
+.prototypepapir .grid-item {
+    margin: 5%;
+}
+
+.prototypepapir .grid-item img {
+    width: 50%;
+    height: auto;
+}
+
 /* Styling af skitser */
+
+.skitser .grid-item {
+    margin: 2%;
+    /* Se på den her margin igen*/
+}
 
 .skitser .grid-item img {
     width: 100%;
@@ -159,8 +175,25 @@ footer {
 }
 
 /* Styling af teknisk dokumentation */
+.teknik .grid-item {
+    margin: 5%;
+    /* Se på den her margin igen*/
+}
+
 .teknik .grid-item img {
-    width: 100%;
+    width: 90%;
+    height: auto;
+
+}
+
+/* Styling af billede af farvekode */
+
+.farvekode .grid-item {
+    margin: 5%;
+}
+
+.farvekode .grid-item img {
+    width: 40%;
     height: auto;
 
 }
@@ -181,6 +214,14 @@ footer {
 
 }
 
+/* Styling af spil element */
+
+.spilelement .grid-item img {
+    width: 100%;
+    height: auto;
+    grid-row: 1/2;
+
+}
 
 /* Styling af lille blå site */
 
@@ -313,15 +354,16 @@ a:active {
 
 /* Styling af forside teskst */
 
-.forside{
+.forside {
     text-align: center;
     margin-top: 2%;
     font-size: x-large;
 }
 
 .forside p {
-    margin: 20px; /* Adjust the margin as desired */
+    margin: 20px;
+    /* Adjust the margin as desired */
     padding: 9px;
-  }
-  
-  
+}
+
+/* Styling af CTA knap, portfolio site  */
