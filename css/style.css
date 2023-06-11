@@ -29,6 +29,7 @@ p a {
     text-decoration: underline;
     font-size: large;
     font-weight: 500;
+
 }
 
 footer {
@@ -43,7 +44,7 @@ footer {
 
 .navigation {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
@@ -112,9 +113,15 @@ footer {
 }
 
 .ctat6 {
-    max-width: 50%; 
+    max-width: 50%;
     height: auto;
     padding: 10%;
+}
+
+/* Styling af tema 3*/
+
+.fiveact {
+    margin: 60px;
 }
 
 
@@ -322,7 +329,7 @@ a:active {
 /* Styling af CV */
 
 .CV img {
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 
@@ -331,6 +338,10 @@ a:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.pdfcv-link {
+    margin: 20%;
 }
 
 /* Styling af CTA på forside*/
@@ -370,11 +381,12 @@ a:active {
 
 .linkcta img {
     display: flex;
-    width: 20%; /* Adjust the width as desired */
+    width: 20%;
+    /* Adjust the width as desired */
     /*height: auto; /* Maintain aspect ratio */
     /*padding: 2%;*/
     margin: 60px;
-    
+
 }
 
 /* Burger menu*/
@@ -389,28 +401,64 @@ a:active {
     font-size: 1.1rem;
     cursor: pointer;
     display: none;
-  }
-  
-  @media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
     .toggle-btn {
-      display: block;
+        display: block;
     }
-  
+
     .main-menu.shown {
-      display: contents;
+        display: contents;
     }
-  
+
     .main-menu ul {
-      display: none;
+        display: none;
     }
-  
+
     .main-menu.shown ul {
-      border-top: 1px solid rgb(105, 56, 0);
-      border-bottom: 1px solid rgb(105, 56, 0);;
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
-      display: flex;
-      flex-flow: column;
-      flex-basis: 100%;
+        border-top: 1px solid rgb(105, 56, 0);
+        border-bottom: 1px solid rgb(105, 56, 0);
+        ;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        display: flex;
+        flex-flow: column;
+        flex-basis: 100%;
     }
-  }
+}
+
+/* Responsivt design */
+
+@media(max-width:800px) {
+
+    .cvsite,
+    .t6site,
+    .t51,
+    .t52,
+    .t53, .t41, .t42, .t43, .t44, .t45 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid_2-1,
+.grid_1-1-1,
+.grid_1-1 {
+
+    display: grid;
+    /*
+    gap: 30px;
+    */
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
