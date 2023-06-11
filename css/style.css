@@ -18,8 +18,9 @@ h2,
 h1,
 h3 {
     color: #ff0000;
-    margin: 40px;
-    font-family: 'Cormorant Garamond', serif;
+    margin: 60px;
+    font-family: 'Cormorant Garamond';
+    font-size: 17px;
 
 }
 
@@ -34,7 +35,7 @@ footer {
     text-align: center;
     padding: 5%;
     color: #ff0000;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond';
 
 }
 
@@ -42,9 +43,11 @@ footer {
 
 .navigation {
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 20px 40px;
 }
 
 .navigation ul {
@@ -57,11 +60,10 @@ footer {
     display: inline-block;
     margin-left: 10px;
     margin-right: 50px;
+    font-family: 'Cormorant Garamond';
+
 }
 
-.navigation li:first-child {
-    margin-left: 0;
-}
 
 .navigation a {
     display: block;
@@ -122,6 +124,9 @@ footer {
 
 }
 
+/* Styling af CTA knap, portfolio site  */
+
+
 .grid-item img {
     display: block;
     margin: 0 auto;
@@ -147,6 +152,13 @@ footer {
 .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+.grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     justify-items: center;
 }
@@ -343,7 +355,7 @@ a:active {
     flex-direction: column;
 }
 
-/* Styling af CTA */
+/* Styling af CTA på forside*/
 
 .CTA {
     display: flex;
@@ -378,4 +390,51 @@ a:active {
     padding: 9px;
 }
 
-/* Styling af CTA knap, portfolio site  */
+/* Styling af CTA knap/link, på alle sider  */
+
+.linkcta img {
+    display: flex;
+    width: 20%; /* Adjust the width as desired */
+    /*height: auto; /* Maintain aspect ratio */
+    /*padding: 2%;*/
+    margin: 60px;
+    
+}
+
+/* Burger menu*/
+
+.toggle-btn {
+    font-family: 'Cormorant Garamond';
+    color: #ff0000;
+    background: transparent;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 800px) {
+    .toggle-btn {
+      display: block;
+    }
+  
+    .main-menu.shown {
+      display: contents;
+    }
+  
+    .main-menu ul {
+      display: none;
+    }
+  
+    .main-menu.shown ul {
+      border-top: 1px solid rgb(105, 56, 0);
+      border-bottom: 1px solid rgb(105, 56, 0);;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-flow: column;
+      flex-basis: 100%;
+    }
+  }
