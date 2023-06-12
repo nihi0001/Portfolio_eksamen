@@ -14,13 +14,23 @@ background: linear-gradient(90deg, rgba(255,211,161,1) 0%, rgba(251,248,176,1) 4
 }
 
 p,
-h2,
 h1,
 h3 {
     color: #ff0000;
     margin: 60px;
     font-family: 'Cormorant Garamond';
     font-size: 17px;
+    font-weight: 500;
+
+
+}
+
+h2{
+    color: #ff0000;
+    margin: 60px;
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
+    font-weight: 600;
 
 }
 
@@ -38,6 +48,11 @@ footer {
     color: #ff0000;
     font-family: 'Cormorant Garamond';
 
+}
+
+.temab{
+    margin: 100px;
+    font-size: 150%;
 }
 
 /* Styling of the navigation bar */
@@ -118,14 +133,36 @@ footer {
     padding: 10%;
 }
 
+/* Styling af tema 2*/
+
+.t2p,
+.t2d,
+.t2d,
+.t2p2 {
+    margin: 100px;
+    /* t2d vil ikke flytte sig*/
+}
+
 /* Styling af tema 3*/
 
 .fiveact {
     margin: 60px;
 }
 
+.t3p, .t3d, .t4fiveact {
+    margin: 100px;
+
+
+}
+
 
 /* Styling af animationsiden */
+
+.t4p, .t4d {
+    margin: 100px;
+}
+
+
 
 /* Grid */
 .grid_1-1-1 {
@@ -235,6 +272,10 @@ footer {
 
 /* Styling af lille blå site */
 
+.t5p, .t5d {
+    margin: 100px;
+}
+
 
 /* Styling af wireframe */
 
@@ -329,7 +370,7 @@ a:active {
 /* Styling af CV */
 
 .CV img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
@@ -381,13 +422,19 @@ a:active {
 
 .linkcta img {
     display: flex;
-    width: 20%;
+    width: 10%;
     /* Adjust the width as desired */
     /*height: auto; /* Maintain aspect ratio */
-    /*padding: 2%;*/
-    margin: 60px;
+    /*padding: 0%;*/
+    margin: 100px;
+
 
 }
+
+.linkcta {
+    margin: 100px;
+}
+
 
 /* Burger menu*/
 
@@ -436,7 +483,12 @@ a:active {
     .t6site,
     .t51,
     .t52,
-    .t53, .t41, .t42, .t43, .t44, .t45 {
+    .t53,
+    .t41,
+    .t42,
+    .t43,
+    .t44,
+    .t45 {
         grid-template-columns: 1fr;
     }
 }
@@ -451,14 +503,53 @@ a:active {
     */
 }
 
-@media screen and (min-width: 768px) {
-    .carousel-wrapper {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 800px) {
+    .carousel {
+        margin-bottom: 10px;
+        /* Adjust the margin for smaller screens */
+    }
+
+    .slides {
+        overflow-x: auto;
+        /* Enable horizontal scrolling for smaller screens */
+        scroll-snap-type: none;
+        /* Disable scroll snapping */
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        /* Prevent wrapping of slides */
+    }
+
+    .slide {
+        flex: 0 0 80%;
+        /* Adjust the width of the slides for smaller screens */
+        margin-right: 10px;
+        /* Adjust the margin between slides for smaller screens */
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .carousel-wrapper {
-        grid-template-columns: repeat(3, 1fr);
+@media (max-width: 800px) {
+
+    .t2p,
+    .poglink,
+    .t3p,
+    .t4p,
+    .t5p,
+    .t2p2,
+    .t2d,
+    .linkcta,
+    .t3d,
+    .t4fiveact, .t4d, .temab, .h2, .t5d {
+        margin: 0%;
     }
+
+    /* Adjust the margin for smaller screens */
+}
+
+@media (max-width: 800px) {
+
+    .temab h2 {
+        margin: 50px;
+    }
+
+    /* Adjust the margin for smaller screens */
 }
